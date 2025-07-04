@@ -1,0 +1,121 @@
+.info-app {
+  margin-top: 50px;
+  .info-app-content {
+    width: 70%;
+    margin: 0 auto;
+    @media screen and (max-width: 768px) {
+      width: 90%;
+    }
+    h2 {
+      color: white;
+      font-size: 3rem;
+      margin-bottom: 100px;
+      text-align: center;
+      font-family: $Poppins;
+      letter-spacing: -2px;
+      @media screen and (max-width: 1024px) {
+        font-size: 2.5rem;
+      }
+      @media screen and (max-width: 440px) {
+        margin-bottom: 80px;
+      }
+      @media screen and (max-width: 321px) {
+        font-size: 2rem;
+        margin-bottom: 50px;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        width: 100px;
+        height: 4px;
+        background-color: $yellow;
+        margin: 0 auto;
+        border-radius: 50px;
+        margin-top: 10px;
+      }
+    }
+    h3{
+      color: white;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      //text-align: center;
+      font-family: $Poppins;
+      @media screen and (max-width: 440px) {
+        font-size: 1.2rem;
+      }
+      @media screen and (max-width: 321px) {
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+    p {
+      color: $grey;
+      font-size: 1.3rem;
+      text-align: justify;
+      margin-bottom: 1rem;
+      font-family: $inter;
+      line-height: 1.5;
+
+      @media screen and (max-width: 440px) {
+        font-size: 1rem;
+      }
+      @media screen and (max-width: 321px) {
+        font-size: 0.8rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
+.screenshot-info {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 100px auto 100px auto;
+  @media screen and (max-width: 440px) {
+    margin: 70px auto 70px auto;
+    width: 100%;
+    padding: 10px;
+    flex-wrap: nowrap;
+    overflow-x: auto; // Meilleur que 'scroll'
+    scroll-snap-type: x mandatory; // Pour un défilement plus smooth
+    justify-content: flex-start; // Alignement à gauche pour le scroll
+    //padding-bottom: 20px; // Espace pour éviter que la scrollbar ne cache le contenu
+    &::-webkit-scrollbar {
+      display: none; // Masquer la scrollbar
+    }
+    &::before {
+      content: "";
+      flex: 0 0 20px; /* = padding-left */
+      scroll-snap-align: start;
+    }
+  }
+  @media screen and (max-width: 321px) {
+    margin: 50px auto 50px auto;
+  }
+  .app-screenshot {
+    aspect-ratio: 9/16;
+    width: 25%;
+    padding: 5px;
+    @media screen and (max-width: 440px) {
+      width: 80%; // Largeur plus grande pour mobile
+      flex: 0 0 auto; // Empêche le rétrécissement
+      scroll-snap-align: start; // Alignement au scroll
+    }
+    .screen-img {
+      width: 100%;
+      height: 100%;
+      background-color: greenyellow;
+      border-radius: 10px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+  }
+}

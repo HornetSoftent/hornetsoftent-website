@@ -1,0 +1,35 @@
+.container-about {
+    width: 78%;
+    height: 500px;
+
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media screen and (max-width:769px) {
+        flex-direction: column;
+        height: auto;
+        width: 85%;
+    }
+
+    
+}
+
+.p-about {
+    width: 50%;
+    font-size: 1rem;
+    font-weight: 500;
+    font-family: $Poppins;
+    letter-spacing: -1px;
+    color: $grey;
+
+     @media screen and (max-width:769px){
+        width: 100%;
+        text-align: center;
+        margin-top: 20px;
+     }
+
+      @media screen and (max-width:376px){
+        font-size: 0.9rem ;
+     }
+}

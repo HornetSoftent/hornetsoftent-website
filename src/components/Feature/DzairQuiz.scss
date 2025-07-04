@@ -1,0 +1,447 @@
+.container-dzair {
+    position: relative;
+
+    height: 750px;
+}
+.contents {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    margin: auto;
+
+    display: none;
+}
+.content-active {
+    display: flex;
+}
+.phone {
+    width: 19%;
+    height: 70%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        margin: auto;
+    }
+    &::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+            linear-gradient(41deg, #000 6.24%, rgba(0, 0, 0, 0) 34.5%),
+            linear-gradient(229deg, #000 4.53%, rgba(0, 0, 0, 0) 42.47%);
+    }
+}
+
+.content {
+    width: 35%;
+    height: 70%;
+    position: relative;
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-family: $inter;
+        font-weight: bold;
+    }
+    .nb {
+        width: 70px;
+        height: 70px;
+
+        margin-right: 20px;
+        .nbr {
+            width: 70px;
+            height: 70px;
+
+            border: 5px solid $yellow;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+        }
+    }
+
+    .info {
+        color: $grey;
+        font-family: $Poppins;
+        font-weight: 500;
+        font-size: 0.8rem;
+    }
+    .container-2 {
+        position: absolute;
+        bottom: 0;
+        .title-2 {
+            @extend .title;
+            float: left;
+        }
+
+        .info-2 {
+            @extend .info;
+        }
+    }
+}
+
+.container-tabs {
+    width: 2%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    position: relative;
+    top: -40px;
+
+    .ellipse {
+        background-color: #000;
+        border: solid 3px $yellow;
+        width: 12px;
+        height: 12px;
+        border-radius: 50px;
+        cursor: pointer;
+    }
+
+    .active-tab {
+        background-color: $yellow;
+    }
+}
+
+.hr {
+    width: 100%;
+    height: 2px;
+    background-color: $yellow;
+    margin-top: 30px;
+    border-radius: 50px;
+}
+.container-4 {
+    position: absolute;
+    bottom: 0;
+}
+.container-3 {
+    @extend .container-2;
+    position: absolute;
+    top: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .contents {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        margin: auto;
+
+        display: none;
+    }
+    .content-active {
+        display: flex;
+    }
+    .phone {
+        width: 28%;
+        height: 70%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            margin: auto;
+        }
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+                linear-gradient(55deg, #000 6.24%, rgba(0, 0, 0, 0) 43%),
+                linear-gradient(249deg, #000 4.53%, rgba(0, 0, 0, 0) 42.47%);
+        }
+    }
+    .content {
+        width: 30%;
+        height: 70%;
+        position: relative;
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: $inter;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+        .nb {
+            width: 60px;
+            height: 60px;
+
+            margin-right: 20px;
+            .nbr {
+                width: 60px;
+                height: 60px;
+
+                border: 5px solid $yellow;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+            }
+        }
+
+        .info {
+            color: $grey;
+            font-family: $Poppins;
+            font-weight: 500;
+            font-size: 0.7rem;
+        }
+        .container-2 {
+            position: absolute;
+            bottom: 0;
+        }
+    }
+    .container-tabs {
+        width: 3%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        position: relative;
+        top: -40px;
+
+        .ellipse {
+            background-color: #000;
+            border: solid 3px $yellow;
+            width: 12px;
+            height: 12px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        .active-tab {
+            background-color: $yellow;
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .container-dzair {
+        position: relative;
+
+        height: auto;
+    }
+    .phone {
+        width: 32.5%;
+        height: 60%;
+        order: -1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin: 45px 0px 45px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            margin: auto;
+        }
+        &::after {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            background: linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+                linear-gradient(55deg, #000 6.24%, rgba(0, 0, 0, 0) 43%),
+                linear-gradient(249deg, #000 4.53%, rgba(0, 0, 0, 0) 42.47%);
+        }
+    }
+
+    .contents {
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        background-color: black;
+        margin: auto;
+
+        display: none;
+    }
+    .content-active {
+        display: flex;
+    }
+
+    .content {
+        width: 50%;
+        height: auto;
+        position: relative;
+
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-family: $inter;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+        .nb {
+            width: 60px;
+            height: 60px;
+
+            margin-right: 20px;
+            .nbr {
+                width: 60px;
+                height: 60px;
+
+                border: 5px solid $yellow;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 2rem;
+            }
+        }
+
+        .info {
+            color: $grey;
+            font-family: $Poppins;
+            font-weight: 500;
+            font-size: 0.7rem;
+        }
+        .container-2 {
+            position: relative;
+            bottom: inherit;
+            margin-top: 35px;
+            .title-2 {
+                float: right;
+            }
+        }
+    }
+    .content-3 {
+        order: -1;
+    }
+    .container-4 {
+        position: relative;
+        bottom: inherit;
+        margin-top: 35px;
+        .title-4 {
+            float: left;
+            align-items: center;
+        }
+    }
+
+    .container-tabs {
+        width: 4%;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        position: relative;
+        top: inherit;
+
+        .ellipse {
+            background-color: #000;
+            border: solid 3px $yellow;
+            width: 12px;
+            height: 12px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+
+        .active-tab {
+            background-color: $yellow;
+        }
+    }
+}
+@media screen and (max-width: 426px) {
+    .container-dzair {
+        position: relative;
+        width: 85%;
+        margin: auto;
+    }
+
+    .contents {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content {
+        width: 100%;
+
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+
+        .info {
+            width: 95%;
+            margin: auto;
+        }
+
+        .title {
+            font-size: 0.8rem;
+        }
+        .nb {
+            width: 60px;
+            height: 60px;
+
+            margin-right: 20px;
+            .nbr {
+                width: 60px;
+                height: 60px;
+
+                font-size: 2rem;
+            }
+        }
+
+        .info {
+            font-size: 0.7rem;
+        }
+        .container-2 {
+            margin-top: 35px;
+            .title-2 {
+                float: right;
+            }
+        }
+    }
+
+    .phone {
+        width: 50.5%;
+    }
+    .container-tabs {
+        width: 8%;
+    }
+}
+
+@media screen and (max-width: 321px) {
+    .phone {
+        width: 80%;
+    }
+    .container-tabs {
+        width: 11%;
+    }
+}
