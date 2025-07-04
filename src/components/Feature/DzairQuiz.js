@@ -12,6 +12,7 @@ const ScrollSection = () => {
 
   return (
     <section className="container-dzair">
+    <h1 className="feature-title">Découvrez l'expérience Dzair Quiz</h1>
       <div className={show === 1 ? "contents content-active" : "contents"}>
         <div className="content">
           <div className="title">

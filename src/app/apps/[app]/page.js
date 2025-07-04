@@ -9,7 +9,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
     const post = await res.data 
    
     const description = post.description;
-    const metaImg = `https://numidian.dev${post.img}`;
+    const metaImg = `https://hornetsoftent.com${post.img}`;
     return {
       title: post.appName,
       description: description,
