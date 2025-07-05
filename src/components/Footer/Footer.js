@@ -16,9 +16,10 @@ const Footer = () => {
       <div className="copyright">
         <p> © 2023 Hornet Softent. All rights reserved.</p>
         <ul>
-          <li> <a href="">CGU</a></li>
-          <li> <a href="">Politique des cookies</a></li>
-          <li> <a href="">Mention Legal</a></li>
+          <li> <a href="/legal/conditions-generales-d-utilisation">CGU</a></li>
+          <li> <a href="/legal/politique-de-cookies">Politique des cookies</a></li>
+          <li> <a href="/legal/mentions-legales">Mention Legal</a></li>
+          <li><a href="/legal/politique-de-confidentialite">Politique de confidentialité</a></li>
         </ul>
       </div>
     </footer>

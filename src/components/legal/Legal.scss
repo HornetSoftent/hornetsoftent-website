@@ -1,0 +1,59 @@
+.legal{
+    h1{
+    text-align: center;
+   color: #F5BE1E;
+   font-size: 3rem;
+  margin-top: 100px;
+
+}
+
+h2{
+    color: #F5BE1E;
+    font-size: 1.5rem;
+    margin: 20px 0px 20px;
+}
+
+h3{
+    margin: 20px 0px 20px;
+    font-size: 1.2rem;
+}
+
+article{
+    width:80%;
+    color: rgb(161, 161, 161);
+   line-height: 1.5;
+    margin:auto;
+    margin-bottom: 100px; 
+    margin-top: 100px; 
+}
+
+article a{
+    color: #F5BE1E;
+
+}
+
+ul li{
+    //color: #F5BE1E;
+    margin-left: 30px;
+    list-style: inherit; 
+}
+
+
+p{
+    font-size: 1rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+@media screen and (min-width: 320px) and (max-width: 426px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+}
+}
