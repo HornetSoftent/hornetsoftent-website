@@ -1,3 +1,4 @@
+import { URL } from "@/components/Config/Config";
 import Details from "@/components/details/Details/Details";
 import Footer from "@/components/Footer/Footer";
 import axios from "axios";
@@ -22,7 +23,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 export default async function Page({ params }) {
   const { app } = params;
 
-  const data = await axios.get(`http://localhost:3050/api/apps/${app}`);
+  const data = await axios.get(`${URL}/api/apps/${app}`);
   const post = await data.data;
 
   return (
