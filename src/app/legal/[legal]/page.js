@@ -22,7 +22,7 @@ export async function generateMetadata({ params, searchParams }, parent) {
 export default async function page({params}) {
   const { legal } = params;
 
-  const data = await axios.get(`http://localhost:3050/api/legal/${legal}`);
+  const data = await axios.get(`${URL}/api/legal/${legal}`);
   const post = await data.data;
   return (
     <>

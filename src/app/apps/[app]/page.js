@@ -4,28 +4,26 @@ import Details from "@/components/details/Details/Details";
 import Footer from "@/components/Footer/Footer";
 import axios from "axios";
 
-export async function generateMetadata({ params, searchParams }, parent) {
-    const { app } = params;
+export async function generateMetadata({ params }) {
+  const { app } = params;
   
-    const res= await axios.get(`http://localhost:3050/api/apps/${app}`)
-    const post = await res.data 
-   
-    const description = post.description;
-    const metaImg = `https://hornetsoftent.com${post.img}`;
-    return {
-      title: post.appName,
-      description: description,
-      openGraph: {
-        images: [metaImg],
-      },
-    };
-  }
+  const response = await fetch(`${URL}/api/apps/${app}`);
+  const post = await response.json();
+  
+  return {
+    title: post.appName,
+    description: post.description,
+    openGraph: {
+      images: [`https://hornetsoftent.com${post.img}`],
+    },
+  };
+}
 
 export default async function Page({ params }) {
   const { app } = params;
 
-  const data = await axios.get(`${URL}/api/apps/${app}`);
-  const post = await data.data;
+  const response = await fetch(`${URL}/api/apps/${app}`);
+  const post = await response.json();
 
   return (
     <div>
