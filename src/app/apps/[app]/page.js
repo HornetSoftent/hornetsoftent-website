@@ -1,3 +1,4 @@
+"use server"
 import { URL } from "@/components/Config/Config";
 import Details from "@/components/details/Details/Details";
 import Footer from "@/components/Footer/Footer";

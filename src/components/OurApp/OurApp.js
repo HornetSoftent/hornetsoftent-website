@@ -4,6 +4,7 @@ import axios from "axios";
 import DzairQuiz from "@/assets/app/DzairQuiz.png";
 import TifinaghIgnite from "@/assets/app/TifinaghIgnite.png";
 import Image from "next/image";
+import { URL } from "../Config/Config";
 
 const OurApp = () => {
   const [apps, setApps] = useState([]);
@@ -12,7 +13,7 @@ const OurApp = () => {
   useEffect(()=>{
     const fetchApps = async () => {
       try {
-        const response = await axios.get("http://localhost:3050/api/apps");
+        const response = await axios.get(`${URL}/api/apps`);
         setApps(response.data);
       } catch (error) {
         console.error("Error fetching apps:", error);
