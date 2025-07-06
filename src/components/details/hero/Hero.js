@@ -27,22 +27,28 @@ export default function Hero({appName, title, color, preview, hero, android, ios
             })} <h3>(5.0)</h3>
       
       </div>
-        <div className="badges">
-         <a
+        <div className="badges-app">
+        <div className="badge">
+            <a
             href={android}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image className="badge" src={googleBadge} alt="Google Play Badge" width={0}
+            <Image  src={googleBadge} alt="Google Play Badge" width={0}
   height={0} />
           </a>
-          <a
+        </div>
+        <div className="badge">
+            <a
             href={ios}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Image className="badge" src={appleBadge} alt="Apple Store Badge" width={0} height={0} />
+            <Image  src={appleBadge} alt="Apple Store Badge" width={0} height={0} />
           </a>
+        </div>
+         
+          
          
         </div>
          </div>
