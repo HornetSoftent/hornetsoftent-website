@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
     title: post.appName,
     description: post.description,
     openGraph: {
-      images: [`https://hornetsoftent.com${post.img}`],
+      images: [`https://hornetsoftent.com/${post.img}`],
     },
   };
 }
