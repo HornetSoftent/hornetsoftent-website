@@ -76,6 +76,9 @@
         font-family: $inter;
         font-weight: bold;
     }
+    .title-4{
+        float: left;
+    }
     .nb {
         width: 70px;
         height: 70px;
@@ -98,7 +101,7 @@
         color: $grey;
         font-family: $Poppins;
         font-weight: 500;
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .container-2 {
         position: absolute;
@@ -231,7 +234,7 @@
             color: $grey;
             font-family: $Poppins;
             font-weight: 500;
-            font-size: 0.7rem;
+            font-size: 1rem;
         }
         .container-2 {
             position: absolute;
@@ -266,7 +269,7 @@
 @media screen and (max-width: 768px) {
     .container-dzair {
         position: relative;
-
+      
         height: auto;
     }
     .phone {
@@ -306,7 +309,6 @@
         flex-direction: column;
         background-color: black;
         margin: auto;
-
         display: none;
     }
     .content-active {
@@ -349,7 +351,7 @@
             color: $grey;
             font-family: $Poppins;
             font-weight: 500;
-            font-size: 0.7rem;
+            font-size: 1rem;
         }
         .container-2 {
             position: relative;
@@ -420,6 +422,7 @@
         .info {
             width: 95%;
             margin: auto;
+            
         }
 
         .title {
@@ -439,7 +442,7 @@
         }
 
         .info {
-            font-size: 0.7rem;
+            font-size: 1rem;
         }
         .container-2 {
             margin-top: 35px;

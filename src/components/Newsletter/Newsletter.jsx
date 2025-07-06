@@ -36,11 +36,8 @@ export default function Newsletter() {
         <div className="vr" />
         <div className="descri">
           <p>
-            Join our exclusive newsletter to be among the first to hear about
-            our latest creations, exciting updates and access to beta testing.
-            By becoming a member of our hive, you'll have preview access to the
-            Hornet Softent universe, where every newsletter is an invitation to
-            discovery.
+            Inscrivez-vous à notre newsletter exclusive pour être parmi les premiers à découvrir nos dernières créations, nos actualités passionnantes et accéder aux phases de test bêta.
+En rejoignant notre ruche, vous aurez un accès privilégié à l’univers de Hornet Softent, où chaque newsletter est une invitation à l’aventure.
           </p>
         </div>
       </div>
