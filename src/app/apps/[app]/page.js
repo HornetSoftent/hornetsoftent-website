@@ -12,7 +12,7 @@ export async function generateMetadata({ params }) {
   
   return {
     title: post.appName,
-    description: post.description,
+    description: post.meta,
     openGraph: {
       images: [`https://hornetsoftent.com/${post.img}`],
     },
