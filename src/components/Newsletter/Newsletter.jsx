@@ -3,7 +3,7 @@ import {
   FaYoutube,
   FaTiktok,
   FaInstagram,
-  FaFacebookF,
+  FaXTwitter,
   FaPaperPlane,
 } from "react-icons/fa6";
 export default function Newsletter() {
@@ -21,18 +21,15 @@ export default function Newsletter() {
           </div>
           <div className="socialM">
             <ul>
-              <li>
-                <FaYoutube />
-              </li>
-              <li>
-                <FaTiktok />
-              </li>
-              <li>
-                <FaInstagram />
-              </li>
-              <li>
-                <FaFacebookF />
-              </li>
+               <li><a target="_blank"
+                            rel="noopener noreferrer"  href="https://x.com/HornetSoftent"><FaXTwitter /></a></li>
+                                      <li><a target="_blank"
+                            rel="noopener noreferrer"  href="https://www.instagram.com/hornetsoftent/"><FaInstagram /></a></li>
+                                      <li><a target="_blank"
+                            rel="noopener noreferrer"  href="https://www.tiktok.com/@hornetsoftent_"><FaTiktok /></a></li>
+                                      <li><a target="_blank"
+                            rel="noopener noreferrer"  href="https://www.youtube.com/@HornetSoftent"><FaYoutube /></a></li>
+              
             </ul>
           </div>
         </div>

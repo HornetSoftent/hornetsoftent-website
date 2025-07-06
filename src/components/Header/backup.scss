@@ -1,0 +1,247 @@
+:root {
+    --vh: 1vh; /* Valeur par défaut pour les navigateurs qui ne supportent pas JS */
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    width: 90%;
+    position: fixed;
+    left: 50%;
+    top: 30px;
+    transform: translateX(-50%);
+    z-index: 90;
+
+    .logo {
+        height: 70px;
+        width: 70px;
+        z-index: 100;
+        display: block;
+        position: relative;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        width: 90%;
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+
+        .mainMenu {
+            transform: translateX(100%);
+            width: 30%;
+            height: 70%;
+            background-color: #00000070;
+            transform-origin: right;
+            transition: transform 0.5s;
+            transform-origin: right;
+            display: flex;
+            border-radius: 30px;
+            align-items: center;
+            justify-content: space-evenly;
+            overflow: hidden;
+            font-family: $inter;
+.active{
+                color: $yellow;
+            }
+            a {
+                color: rgb(255, 255, 255);
+                font-weight: bold;
+            }
+            
+        }
+
+        .ul-active {
+            transform: translateX(-5%);
+            transform-origin: right;
+            transition: transform 0.5s;
+        }
+        .hr {
+            display: block;
+            margin: 70px 0px 30px;
+            width: 50%;
+            background-color: #101010;
+            display: none;
+        }
+        .icons-socials {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            display: none;
+            width: 30%;
+            height: 50px;
+
+            li {
+                a {
+                    font-size: 1.5rem !important;
+                }
+            }
+        }
+    }
+    .openMenu {
+        background-color: #ffffff53;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 70%;
+        font-size: 1.5rem;
+        border-radius: 30px;
+        cursor: pointer;
+        color: white;
+        z-index: 2;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 115px;
+
+        width: 100%;
+        position: fixed;
+        left: 0;
+        top: 0;
+        transform: translateX(0);
+        z-index: 90;
+        background-color: red;
+
+        .logo {
+            margin: 0px 0px 0px 50px;
+            z-index: 100;
+        }
+
+        nav {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            height: 100dvh;
+            position: absolute;
+            bottom: 0;
+            z-index: 2;
+            background-color: aqua;
+            
+            //background-color: black;
+            //border-bottom: 4px solid;
+            .mainMenu {
+                transform: translateY(-121%);
+                width: 100%;
+                height: calc(var(--vh, 1vh) * 100 - 115px) !important;
+                /* height: 100%;
+height: 100vh;
+height: 100svh;
+
+                  height: 100vh; */
+                position: fixed;
+                top: 0;
+                bottom: 0;
+                line-height: 3;
+                background-color: rgb(0, 0, 0);
+                border-top: 4px solid #101010;
+                background-color: rgb(0, 255, 34);
+                z-index: 1;
+                transition: transform 0.5s;
+                transform-origin: left;
+                display: flex;
+                border-radius: 0;
+                align-items: center;
+                justify-content: start;
+                flex-direction: column;
+                overflow: hidden;
+
+                a {
+                    font-size: 1.7rem;
+                    font-weight: bold;
+                }
+            }
+            .mainMenu:nth-child(1) {
+                padding-top: 20px;
+            }
+
+            .ul-active {
+                transform: translateY(0);
+                transform-origin: left;
+                transition: transform 0.5s;
+            }
+            .hr {
+                display: block;
+                margin: 70px 0px 30px;
+                width: 50%;
+                background-color: #101010;
+            }
+            .icons-socials {
+                display: flex;
+                justify-content: space-evenly;
+                align-items: center;
+
+                width: 30%;
+                height: 50px;
+
+                li {
+                    a {
+                        font-size: 1.5rem !important;
+                    }
+                }
+            }
+        }
+        .openMenu {
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            margin: 0px 50px 0px 0px;
+            background-color: transparent;
+            font-size: 3rem;
+        }
+    }
+}
+@media screen and (max-width: 465px) {
+    header {
+        .logo {
+            margin: 0px 0px 0px 20px;
+            z-index: 3;
+            width: 57px;
+            height: 57px;
+            
+        }
+
+        .openMenu {
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            margin: 0px 20px 0px 0px;
+            background-color: transparent;
+            font-size: 2.2rem;
+        }
+    }
+}
+
+@media screen and (max-width: 376px) {
+    header {
+        .logo {
+            margin: 0px 0px 0px 20px;
+            z-index: 3;
+            width: 57px;
+            height: 57px;
+        }
+
+        .openMenu {
+            width: 60px;
+            height: 60px;
+            border-radius: 50px;
+            margin: 0px 20px 0px 0px;
+            background-color: transparent;
+            font-size: 2.2rem;
+        }
+    }
+}
+
