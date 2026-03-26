@@ -11,7 +11,7 @@ export default function Newsletter() {
     <div className="container-f">
         <div className="c-p">
           <div className="title-newsLetter">
-            <h1>JOIN THE HIVE OF HORNET SOFTENT.</h1>
+            <h1>JOIN THE HIVE OF HORNET SOFTENT</h1>
           </div>
           <div className="newsLetter">
             <input type="email" placeholder="Email" />
