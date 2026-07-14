@@ -1,4 +1,5 @@
 @use "../../styles/settings" as *;
+@use "sass:color";
 footer {
     width: 100%;
     //height: 600px;
@@ -11,7 +12,7 @@ footer {
         width: 90%;
         margin: auto;
         
-        background-color: darken( $grey, 50);
+        background-color: color.adjust($grey, $lightness:-50);
     }
 }
 
@@ -135,7 +136,7 @@ footer {
             cursor: pointer;
 
             &:hover {
-                background-color: lighten($yellow, 10);
+                background-color: color.adjust($yellow, $lightness: 10) ;
             }
         }
     }
