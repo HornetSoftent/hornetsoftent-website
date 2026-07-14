@@ -7,16 +7,20 @@ import DzairQuiz from "@/components/Feature/DzairQuiz";
 import About from "@/components/About/About";
 import Footer from "@/components/Footer/Footer";
 import Newsletter from "@/components/Newsletter/Newsletter";
+import Spotlight from "@/components/Spotlight/Spotlight";
+import OurGames from "@/components/OurGames/OurGames";
 export default function Home() {
   return (
     <main>
-       <Header />
+      <Header />
       <Hero />
-      <OurApp />
-      <DzairQuiz />
-      <About />
+      <OurApp /> 
+      <OurGames/>
+      <Spotlight/>
+       {/* <DzairQuiz />  */}
+       <About />
        <Newsletter/> 
-      <Footer />
+      <Footer /> 
     </main>
   );
 }

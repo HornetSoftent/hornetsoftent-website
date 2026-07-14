@@ -1,13 +1,15 @@
-@import "../styles/settings";
-@import "../components/Header/Header.scss";
-@import "../components/Footer/Footer.scss";
-@import "../components/About/About.scss";
-@import "../components/Feature/DzairQuiz.scss";
-@import "../components/Hero/Hero.scss";
-@import "../components/OurApp/OurApp.scss";
-@import "../components/details/hero/Hero.scss";
-@import "../components/details/Info/Info.scss";
-@import "../components/details/CallToAction/CallToAction.scss";
-@import "../components/Newsletter/NewsLetter.scss";
-@import "../components/legal/Legal.scss";
-@import "../components/Contact/Contact.scss"
+@use "../styles/settings" as *;
+@use "../components/Header/Header.scss";
+@use "../components/Footer/Footer.scss";
+@use "../components/About/About.scss";
+@use "../components/Feature/DzairQuiz.scss";
+@use "../components/Spotlight/Spotlight.scss";
+@use "../components/Hero/Hero.scss" as *;
+@use "../components/OurApp/OurApp.scss";
+@use "../components/details/hero/Hero.scss" as *;
+@use "../components/details/Info/Info.scss" as *;
+@use "../components/details/CallToAction/CallToAction.scss";
+@use "../components/Newsletter/NewsLetter.scss";
+@use "../components/legal/Legal.scss";
+@use "../components/Contact/Contact.scss";
+@use "../components/OurGames/OurGames.scss";
