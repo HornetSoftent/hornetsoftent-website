@@ -68,7 +68,7 @@
         cursor: pointer;
 
         &:hover {
-            background: color.adjust(rgb(52, 52, 52), $lightness:10);
+            background: color.adjust(rgb(52, 52, 52), $lightness:10%);
         }
     }
 
@@ -90,7 +90,7 @@
             cursor: pointer;
 
             &:hover {
-                color: color.adjust($grey, $lightness:10) ;
+                color: color.adjust($grey, $lightness:10%) ;
             }
         }
     }

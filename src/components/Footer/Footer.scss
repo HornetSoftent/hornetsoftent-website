@@ -12,7 +12,7 @@ footer {
         width: 90%;
         margin: auto;
         
-        background-color: color.adjust($grey, $lightness:-50);
+        background-color: color.adjust($grey, $lightness:-50%);
     }
 }
 
@@ -136,7 +136,7 @@ footer {
             cursor: pointer;
 
             &:hover {
-                background-color: color.adjust($yellow, $lightness: 10) ;
+                background-color: color.adjust($yellow, $lightness: 10%) ;
             }
         }
     }
