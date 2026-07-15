@@ -5,10 +5,9 @@ import Footer from "@/components/Footer/Footer";
 import axios from "axios";
 
 export async function generateMetadata({ params }) {
-  const { app } = params;
+  const { app } = await params;
   
-  const response = await fetch(`${URL}/api/apps/${app}`);
-  const post = await response.json();
+  const {data:post} = await axios.get(`${URL}/api/apps/${app}`)
   
   return {
     title: post.appName,
@@ -20,14 +19,15 @@ export async function generateMetadata({ params }) {
 }
 
 export default async function Page({ params }) {
-  const { app } = params;
+const { app } = await params;
 
-  const response = await fetch(`${URL}/api/apps/${app}`);
-  const post = await response.json();
 
+  const {data:post} = await axios.get(`${URL}/api/apps/${app}`)
+  
+console.log(post)
   return (
     <div>
-      <Details
+     <Details
         appName={post.appName}
         title={post.title}
         color={post.color}

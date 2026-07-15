@@ -73,6 +73,8 @@ const Header = () => {
                 >
                     <li><a className={pathname === "/" ? "active" : ""} href="/" onClick={handleLinkClick}>Accueil</a></li>
                     <li><a className={pathname === "/apps/" ? "active" : ""} href="/#App" onClick={handleLinkClick}>Apps</a></li>
+                                        <li><a className={pathname === "/games/" ? "active" : ""} href="/#Games" onClick={handleLinkClick}>Games</a></li>
+
                     <li><a href="/#About" onClick={handleLinkClick}>About</a></li>
                     <li><a className={pathname === "/contact" ? "active" : ""} href="/contact" onClick={handleLinkClick}>Contact</a></li>
                     <div className="hr" />
